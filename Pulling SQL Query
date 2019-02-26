@@ -32,8 +32,8 @@ c1
 #....Copy and paste your query from MS Access SQL
 #.... Note the differences in formatting, especially with dates and filters that are separate in R and MS Access.
 
-qry = "SELECT Tablename.tagname1, tablename.tagname2, tablename2.tagname1, tablename2.tagname2,tablename2.tagname3
-FROM (Tablename1 INNER JOIN tablename2 ON tablename1.tagname1 = tablename2.tagname1)
+qry = "SELECT tablename.tagname1, tablename.tagname2, tablename2.tagname1, tablename2.tagname2,tablename2.tagname3
+FROM (tablename1 INNER JOIN tablename2 ON tablename1.tagname1 = tablename2.tagname1)
 WHERE (tablename1.tagname1)>=CDate('1/1/2019') And (tablename1.tagname1)<=CDate('1/10/2019')) AND ((tablename1.tagname2) Like '2' Or (tablename1.tagname2) Like '5' )) ORDER BY tabename1.tagname1;"
 
 #.... Populate the SQL
